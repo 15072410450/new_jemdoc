@@ -1,0 +1,54 @@
+# jemdoc: menu{MENU}{index.html}
+# jemdoc: nofooter  
+
+== Zexuan Liu
+~~~
+{}{img_left}{photos/bio.jpg}{alt text}{188}{260}
+B.S.\n [https://hyxt.whu.edu.cn/ Hongyi Honor College], \n[https://www.whu.edu.cn/ Wuhan University (WHU)]\n
+299 Bayi Ave, Room 5305 \n
+Hubei, China 43202 \n 
+Email: /zexuanliu/ \[at\] ocf \[dot\] berkely \[dot\] edu\n
+~~~
+
+== Biography[CV/cv.pdf \[CV\]]
+I am currently a Research Assistant in University of California, Berkeley, majoring in Mathematics, under the guidance of [https://grigas.ieor.berkeley.edu/ Professor Paul Grigas]. I will (suppose to) receive the B.S degree from Wuhan University ([https://www.whu.edu.cn/ WHU]), China, in 2021. 
+
+== Publications 
+- Z. Liu, Z. Sun, J. Yang, \"A Numerical Study of Superconvergence of the Discontinuous Galerkin Method by Patch Reconstruction\", Submitted to the Electronic Research Archive. [https://www.ocf.berkeley.edu/~zexuanliu/papers/super_covergence.pdf \[pdf\]]
+
+== Research
+=== Interests
+My research interests are at the interface between high performance computing and optimization. More speifically,  I am interested in fast convergence theory in numerical PDEs, highly efficient optimization algorithms and their connections in machine learning.
+
+=== Non-convex Parametric Optimization via Differential Equations
+Used ordinary differential equation to develop different second order algorithms for computing anapproximately optimal solution path of a parameterized non-convex problem.
+- Derived approximate solution path by Euler discretization method
+- Developed the error bound of the algorithm.
+- Modified the algorithm by solving a sub-problem to minimize the upper bound (MINIUPPER).
+- Implement MINIUPPER algorithm and prove it has the optimal convergence rate.
+
+=== Superconvergence of the Discontinuous Galerkin Method
+
+Developed a new Galerkin method by patch reconstruction requiring much less free order than the traditional methods to solve elliptic PDEs and explored the superconvergence property.
+- Developed symmetry element patch picking rule and defined only one degree of freedom (DOF) per element.
+- Constructed the global stiffness matrix with fix size regardless of the approximation order which may vary.
+- Implemented the discontinuous Galerkin method by patch reconstruction (DGPR) in MATLAB and C\+\+.
+- Extended the DGPR method in MATLAB into the 6th polynomials while traditional method only use 1st order or 2nd order polynomials.
+- Found three different patterns of superconvergence from 1 to 3 dimensions with our DGPR method in elliptic problem when the mesh has geometric symmetry.
+
+
+=== High Performance Machine Learning Library
+Developed a high efficiency machine learning library library for an ARMv8-a architecture server and implemented a scikit-learn like C++ machine learning toolkit optimized for the specific architecture.
+- Developed linear regression models (Ridge regression, Lasso regression and Elastic Net methods) based on OpenBLAS, which are 140% times faster than scikit-learn functions on the ARMv8 sever.
+- Implemented the Word2Vec function whose training is 171% times faster than scikit-learn functions on the ARMv8 sever.
+- Developed givens transformation operator via /TVM/ to provide cross platform library.
+
+== Teaching experience
+=== Teaching Assistant
+- Fall 2019
+: {Numerical Analysis} Direct solution of linear systems, including error bounds, iteration methods, least square approximation, eigenvalues and eigenvectors of matrices. I taught students with theoretical and practical results of iteration methods and eigen problems. 
+
+=== Seminar
+
+- Fall 2018 & Spring 2019
+: {Seminar of advanced analysis} Covering the first three books of / Princeton Lectures in Analysis/ written by Elias M. Stein and Rami Shakarchi. I delivered the most part of the /Real Analysis/ and several chapters of /Fourier Analysis/.
