@@ -6,7 +6,7 @@ http://jemdoc.jaboc.net/.
 
 It was firstly written by Jacob Mattingley, in 2007. Much more info at http://jemdoc.jaboc.net/.
 
-Modified by Pantoria.
+Modified by Pantoria. Much more info at https://pantoria.github.io/new_jemdoc/.
 
 ## How to use
 
