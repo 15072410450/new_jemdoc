@@ -1,1 +1,1 @@
-./jemdoc -c mysite.conf *.jemdoc
+./jemdoc -c ./css/mysite.conf *.jemdoc

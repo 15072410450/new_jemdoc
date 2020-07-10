@@ -1626,7 +1626,7 @@ def main():
     else:
       thisout = outname
 
-    infile = open(inname, 'rUb')
+    infile = open(inname, 'rb')
     outfile = open(thisout, 'w')
 
 #    print(infile.read())
